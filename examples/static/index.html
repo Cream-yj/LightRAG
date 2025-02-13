@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>LightRAG Chat Demo</title>
+
+  <!-- 1) 先引入 Marked 4.3.0 (适配下方 marked(content) 写法) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
+
+  <!-- 2) （可选）如果需要代码高亮，可引入 highlight.js
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.8.0/styles/github.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.8.0/lib/highlight.js"></script>
+  -->
+
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: "Helvetica", "Arial", sans-serif;
+      background-color: #f2f2f2;
+    }
+    .chat-container {
+      max-width: 800px;
+      margin: 0 auto;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+    .chat-messages {
+      flex: 1;
+      padding: 1rem;
+      overflow-y: auto;
+    }
+    .message {
+      display: block;
+      padding: 0.8rem 1rem;
+      margin: 0.5rem 0;
+      border-radius: 10px;
+      max-width: 70%;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    /* 用户（右侧，蓝色气泡） */
+    .user-message {
+      background-color: #0084ff;
+      color: #fff;
+      margin-left: auto; /* 向右对齐 */
+    }
+    /* AI（左侧，灰色气泡） */
+    .assistant-message {
+      background-color: #e4e6eb;
+      color: #000;
+      margin-right: auto; /* 向左对齐 */
+    }
+
+    /* 同一气泡内，思考过程 + 正式回答的容器 */
+    .answer-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .answer-title {
+      font-weight: bold;
+      font-size: 0.95rem;
+      margin-bottom: 0.2rem;
+    }
+
+    /* 思考过程(可设成浅黄+虚线区分) */
+    .cot-block p{
+      margin: 0;
+      font-size: 13px;
+      color: #6a6a6a;
+    }
+
+    .final-block p{
+      margin: 0;
+    }
+    /* 如果需要给正式回答也单独一个容器 */
+    /* .final-block {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      padding: 0.5rem;
+    } */
+
+    .chat-input {
+      display: flex;
+      padding: 0.5rem;
+      border-top: 1px solid #ccc;
+      background-color: #fafafa;
+    }
+    .chat-input textarea {
+      flex: 1;
+      resize: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+    .chat-input button {
+      margin-left: 0.5rem;
+      padding: 0 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+    }
+    .chat-input button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="chat-container">
+  <div class="chat-messages" id="chatMessages"></div>
+  <div class="chat-input">
+    <textarea id="userInput" rows="2" placeholder="请输入问题..."></textarea>
+    <button id="sendBtn">发送</button>
+  </div>
+</div>
+
+<script>
+  // 对话记录
+  let conversation = [];
+  const chatMessagesEl = document.getElementById("chatMessages");
+  const userInputEl = document.getElementById("userInput");
+  const sendBtn = document.getElementById("sendBtn");
+
+  // 渲染对话
+  function renderMessages() {
+    chatMessagesEl.innerHTML = "";
+
+    conversation.forEach(msg => {
+      const msgEl = document.createElement("div");
+      msgEl.classList.add("message");
+
+      if (msg.role === "user") {
+        // 用户消息(右侧)
+        msgEl.classList.add("user-message");
+        // 直接显示文本
+        msgEl.textContent = msg.content;
+      } else {
+        // AI 消息(左侧气泡)
+        msgEl.classList.add("assistant-message");
+
+        // 1) 拆出思考过程<think>...</think>与正式回答
+        let answer = msg.content || "";
+        const thinkPattern = /<think>([\s\S]*?)<\/think>/;
+        let chainOfThought = "";
+        let mainAnswer = answer;
+
+        // 匹配思考过程
+        const match = answer.match(thinkPattern);
+        if (match) {
+          chainOfThought = match[1];
+          mainAnswer = mainAnswer.replace(thinkPattern, "");
+        }
+
+        // 2) 去除每段末尾空行
+        chainOfThought = chainOfThought.replace(/\n+$/, "");
+        mainAnswer = mainAnswer.replace(/\n+$/, "");
+
+        // 3) 创建一个容器，把思考过程 + 正式回答分段显示
+        const container = document.createElement("div");
+        container.classList.add("answer-container");
+
+        // (1) 如果有思考过程，渲染
+        if (chainOfThought.trim()) {
+          const cotTitle = document.createElement("div");
+          cotTitle.classList.add("answer-title");
+          cotTitle.textContent = "思考过程";
+
+          const cotBlock = document.createElement("div");
+          cotBlock.classList.add("cot-block");
+          // 使用 marked 渲染 Markdown
+          const cotHtml = marked.parse(chainOfThought);
+          cotBlock.innerHTML = cotHtml;
+
+          container.appendChild(cotTitle);
+          container.appendChild(cotBlock);
+        }
+
+        // (2) 正式回答
+        if (mainAnswer.trim()) {
+          const finalTitle = document.createElement("div");
+          finalTitle.classList.add("answer-title");
+          finalTitle.textContent = "正式回答";
+
+          const finalBlock = document.createElement("div");
+          finalBlock.classList.add("final-block");
+          const finalHtml = marked.parse(mainAnswer);
+          finalBlock.innerHTML = finalHtml;
+
+          container.appendChild(finalTitle);
+          container.appendChild(finalBlock);
+        }
+
+        msgEl.appendChild(container);
+      }
+
+      chatMessagesEl.appendChild(msgEl);
+    });
+
+// 滚动到底部
+chatMessagesEl.scrollTop = chatMessagesEl.scrollHeight;
+
+// 如果要高亮代码:
+// hljs.highlightAll();
+}
+
+  // 发送消息
+  sendBtn.addEventListener("click", () => {
+    const userText = userInputEl.value.trim();
+    if (!userText) return;
+
+    // 用户消息
+    conversation.push({ role: "user", content: userText });
+    userInputEl.value = "";
+    renderMessages();
+
+    // 调用后端
+    fetch("/query", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ conversation })
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.error) {
+        // 如果后端报错
+        conversation.push({
+          role: "assistant",
+          content: "Error: " + data.error
+        });
+      } else {
+        // 拿到回答 (可能含 <think>...</think>)
+        const answer = data.answer || "";
+        conversation.push({
+          role: "assistant",
+          content: answer
+        });
+      }
+      renderMessages();
+    })
+    .catch(err => {
+      console.error(err);
+      conversation.push({
+        role: "assistant",
+        content: "Request failed: " + err
+      });
+      renderMessages();
+    });
+  });
+</script>
+</body>
+</html>
