@@ -1,3 +1,7 @@
+# 用的kg前2000行，测试连续对话
+# 修改 WORKING_DIR = "./dickens_2000"
+# with open("../kg_2000.txt", "r", encoding="utf-8") as f:
+
 import asyncio
 import os
 import inspect
@@ -6,7 +10,7 @@ from lightrag import LightRAG, QueryParam
 from lightrag.llm.ollama import ollama_model_complete, ollama_embed
 from lightrag.utils import EmbeddingFunc
 
-WORKING_DIR = "./dickens"
+WORKING_DIR = "./dickens_2000"
 
 logging.basicConfig(format="%(levelname)s:%(message)s", level=logging.INFO)
 
@@ -29,7 +33,7 @@ rag = LightRAG(
     ),
 )
 
-with open("./kg.txt", "r", encoding="utf-8") as f:
+with open("./kg_2000.txt", "r", encoding="utf-8") as f:
     rag.insert(f.read())
 
 # Perform naive search

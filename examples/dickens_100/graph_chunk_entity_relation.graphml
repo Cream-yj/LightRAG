@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;GROWTH_CONE&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Growth_cones are structures at the tips of developing neurons that guide their extension towards targets."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;LAMELLIPODIUM&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Lamellipodia are sheet-like cell protrusions involved in adhesion and migration."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;SITE_OF_DOUBLE-STRAND_BREAK&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Sites of double-strand breaks refer to locations in DNA where both strands have been severed, often requiring repair."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;NEURON_PROJECTION&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Neuron_projections include dendrites and axons, which extend from the neuron's cell body to transmit signals."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;REGULATION_OF_ACTIN_DYNAMICS_FOR_PHAGOCYTIC_CUP_FORMATION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Regulation_of_actin_dynamics_for_phagocytic_cup_formation is a cellular process regulating actin dynamics during phagocytosis."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;NUCLEUS&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Nucleus is the control center of the cell, containing most of the genetic material."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;CLATHRIN-MEDIATED_ENDOCYTOSIS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Clathrin-mediated endocytosis is a process by which cells internalize extracellular materials."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;EPHB-MEDIATED_FORWARD_SIGNALING&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"EPHB-mediated forward signaling refers to signaling processes involving EPHB receptors."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;ARP2/3_PROTEIN_COMPLEX&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Arp2/3_protein_complex is a protein complex involved in actin polymerization and cytoskeletal organization."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;ACTIN_CYTOSKELETON&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Actin_cytoskeleton refers to the network of actin filaments that provide structural support and enable cell movement."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;CELL_PROJECTION&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Cell_projections are extensions of a cell, such as dendrites or filopodia, used for sensing or adhesion."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;ERBB1_DOWNSTREAM_SIGNALING&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"ErbB1_downstream_signaling is a signaling pathway initiated by the ErbB1 receptor."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;CYTOPLASM&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Cytoplasm is the jelly-like substance inside a cell, where many cellular processes occur."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;PDGFR-BETA_SIGNALING_PATHWAY&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"PDGFR-beta_signaling_pathway refers to signaling processes involving the PDGFR-beta receptor."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;CYTOSKELETON&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Cytoskeleton is the framework of proteins within a cell that maintains its shape and aids in movement."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;ARPC5&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"ARPC5 is a component of various cellular structures, including the Arp2/3 protein complex, actin cytoskeleton, cell projections, and others."&lt;SEP&gt;"ARPC5 is another component of the Arp2/3 complex that participates in signaling events like CDC42_signaling_events, EPHB-mediated forward signaling, and neutrophil degranulation."&lt;SEP&gt;"ARPC5 is another component of the Arp2/3 complex that participates in signaling events like CDC42_signaling_events, EPHB-mediated_forward_signaling, and neutrophil_degranulation."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e&lt;SEP&gt;chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;CYTOSOL&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Cytosol is the liquid portion of the cytoplasm, where various biochemical reactions take place."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;PATHOGENIC_ESCHERICHIA_COLI_INFECTION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Pathogenic_Escherichia_coli_infection is a process describing infection by pathogenic E. coli."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;ENDOSOME&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Endosomes are membrane-bound organelles involved in the sorting and processing of proteins and lipids."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;EPHB-MEDIATED FORWARD SIGNALING&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"EPHB-mediated forward signaling refers to signaling processes involving EPHB receptors."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;EXTRACELLULAR_EXOSOME&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Extracellular_exosomes are vesicles released by cells that can transport materials between cells."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;RHO_GTPASES_ACTIVATE_WASPS_AND_WAVES&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"RHO_GTPases_Activate_WASPs_and_WAVEs describes a process where Rho GTPases activate WASP and WAVE proteins."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;CDC42_SIGNALING_EVENTS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"CDC42_signaling_events is a cellular signaling pathway involving the CDC42 protein."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;SECRETORY_GRANULE_LUMEN&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Secretory_granules are membrane-bound organelles that store and release substances outside the cell."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;CLATHRIN- MEDIATED ENDOCYTOSIS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Clathrin-mediated endocytosis is a process by which cells internalize extracellular materials."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;EXTRACELLULAR_REGION&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Extracellular_region refers to the area outside of a cell, where various biochemical processes occur."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;FICOLIN-1-RICH_GRANULE_LUMEN&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Ficolin-1-rich granules are specialized cellular structures involved in immune responses."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;RAC1_SIGNALING_PATHWAY&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"RAC1_signaling_pathway refers to signaling processes involving the RAC1 protein."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;FOCAL_ADHESION&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Focal_adhesions are sites where the cell membrane attaches to the extracellular matrix, facilitating signaling and movement."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<edge source="&quot;GROWTH_CONE&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is part of growth cones in neurons."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;LAMELLIPODIUM&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is a component of lamellipodia."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;SITE_OF_DOUBLE-STRAND_BREAK&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is associated with sites of double-strand breaks in DNA."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;NEURON_PROJECTION&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is part of neuron projections like dendrites and axons."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;NUCLEUS&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is present in the nucleus."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ARP2/3_PROTEIN_COMPLEX&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is a part of the Arp2/3_protein_complex."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ACTIN_CYTOSKELETON&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is a component of the actin_cytoskeleton."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;CELL_PROJECTION&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is part of cell_projections, which are extensions of cells used for various functions."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;CYTOPLASM&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is located in the cytoplasm."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;CYTOSKELETON&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is a part of the cytoskeleton."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;FICOLIN-1-RICH_GRANULE_LUMEN&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is part of ficolin-1-rich granules."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;FOCAL_ADHESION&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is a component of focal adhesions."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;SECRETORY_GRANULE_LUMEN&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is part of secretory granules."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;CYTOSOL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is found in the cytosol."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;EXTRACELLULAR_EXOSOME&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is part of extracellular exosomes."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;EXTRACELLULAR_REGION&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is present in the extracellular region."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;ENDOSOME&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is a component of endosomes."</data>
+  <data key="d5">"component_of"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+</graph></graphml>

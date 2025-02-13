@@ -1,0 +1,11 @@
+{
+  "doc-4eaa5f15652d7d0fd3377477d5ae6d01": {
+    "content_summary": "'de_novo'_AMP_biosynthetic_process is_a AMP_biosynthetic_process\n'de_novo'_CTP_biosynthetic_process ...",
+    "content_length": 1008797,
+    "status": "failed",
+    "created_at": "2025-02-08T03:09:36.639190",
+    "updated_at": "2025-02-08T04:07:37.460791",
+    "chunks_count": 260,
+    "error": "Server disconnected without sending a response."
+  }
+}

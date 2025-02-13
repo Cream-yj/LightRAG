@@ -1,0 +1,534 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&lt;NAME&gt;">
+  <data key="d0">&lt;TYPE&gt;</data>
+  <data key="d1">&lt;description&gt;</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;CYTOSOL&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"The liquid portion of the cytoplasm where many metabolic reactions take place."&lt;SEP&gt;"The liquid portion of the cytoplasm, serving as a medium for various biochemical reactions."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;CLATHRIN-MEDIATED_ENDOCYTOSIS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Clathrin-mediated endocytosis is a process by which cells internalize extracellular material through clathrin-coated vesicles."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;EPHB-MEDIATED_FORWARD_SIGNALING&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"EPHB-mediated forward signaling refers to cellular signaling processes initiated by EPHB receptors, typically involved in cell-cell communication and development."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;ERBB1_DOWNSTREAM_SIGNALING&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"ErbB1 downstream signaling involves the activation of pathways triggered by the ErbB1 receptor, often associated with growth factor signaling and cellular responses."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;RHO_GTPASES_ACTIVATE_WASPS_AND_WAVES.&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"RHO GTPases activate WASP (Wiskott-Aldrich syndrome protein) and WAVE (WASP family verprolin-homologous proteins), which are involved in actin cytoskeleton remodeling."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;PDGFR-BETA_SIGNALING_PATHWAY&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The PDGFR-beta signaling pathway is activated by platelet-derived growth factor (PDGF) binding to its receptor PDGFR-beta, leading to various cellular responses such as proliferation and differentiation."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;PATHOGENIC_ESCHERICHIA_COLI_INFECTION&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Pathogenic Escherichia coli infection refers to the process by which E. coli causes disease in a host organism."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;ENZYME_BINDING.&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Enzyme binding refers to the interaction of proteins with enzymes, often to regulate enzymatic activity or participate in biochemical pathways."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;ENDOSOME&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"A membrane-bound organelle involved in sorting and processing proteins and lipids for recycling or degradation."&lt;SEP&gt;"A membrane-bound organelle involved in the sorting and processing of proteins and lipids."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;ACTIN_CYTOSKELETON.&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"The actin cytoskeleton is a network of actin filaments that provides structural support and enables cell movement, shape maintenance, and other cellular functions."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;EXTRACELLULAR EXOSOME&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Extracellular vesicles released by cells, containing various biomolecules for intercellular communication."&lt;SEP&gt;"Small vesicles released by cells into the extracellular space, containing biomolecules like proteins and RNA."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;CELL_PROJECTION.&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Cell projections are extensions of the cell membrane and cytoplasm, such as filopodia or lamellipodia, which are involved in cell migration and sensing the environment."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;EXTRACELLULAR REGION&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"The space outside of cells where intercellular communication and other processes occur."&lt;SEP&gt;"The space outside the cell where extracellular processes occur."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;FICOLIN-1-RICH GRANULE LUMEN&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"A compartment within granules rich in ficolin-1, a protein involved in innate immunity."&lt;SEP&gt;"A specialized compartment within granules rich in ficolin-1, a protein involved in innate immune responses."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;FOCAL ADHESION&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Structures that connect the actin cytoskeleton to the extracellular matrix, enabling cell adhesion and migration."&lt;SEP&gt;"Structures that link the actin cytoskeleton to the extracellular matrix, facilitating cell adhesion and migration."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;PROTEIN-MACROMOLECULE_ADAPTOR_ACTIVITY.&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Protein-macromolecule adaptor activity involves proteins that facilitate interactions between different macromolecules, such as proteins and nucleic acids."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;CELL PROJECTION&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Projections from the cell membrane, such as filopodia or lamellipodia, involved in movement and sensing."&lt;SEP&gt;"Protrusions from the cell membrane, such as lamellipodia or filopodia, involved in movement and sensing."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;GROWTH CONE&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"A dynamic structure at the tip of growing axons that senses guidance cues during neuronal development."&lt;SEP&gt;"A structure at the tip of growing axons involved in detecting guidance cues during neuronal development."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;CYTOPLASM&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"The gel-like substance inside the cell where many biochemical processes occur."&lt;SEP&gt;"The jelly-like substance inside the cell, excluding the nucleus, where many cellular processes occur."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;CYTOSOL.&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"The cytosol is the fluid-filled space inside a cell, excluding the organelles, where various biochemical reactions occur."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;LAMELLIPODIUM&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"A sheet-like protrusion at the leading edge of migrating cells, driven by actin polymerization and involved in cell movement."&lt;SEP&gt;"A sheet-like protrusion at the leading edge of migrating cells, driven by actin polymerization."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;NUCLEUS.&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"The nucleus is the membrane-bound organelle in eukaryotic cells that contains most of the cell's genetic material."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;NEURON PROJECTION&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Extensions of neurons, such as axons and dendrites, that facilitate communication between neurons."&lt;SEP&gt;"Projections from neurons, such as dendrites and axons, involved in communication with other neurons."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;CYTOSKELETON&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"A dynamic network of protein filaments that maintains cell shape, facilitates movement, and organizes cellular components."&lt;SEP&gt;"A network of protein filaments that maintains cell shape, enables movement, and organizes the cell's components."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;EXTRACELLULAR_EXOSOME.&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Extracellular exosomes are vesicles released by cells into the extracellular space, often containing proteins, RNA, or other molecules for intercellular communication."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;NUCLEUS&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"The membrane-bound organelle containing the cell's genetic material and regulating gene expression."&lt;SEP&gt;"The membrane-bound organelle containing the cell's genetic material."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;ACTIN CYTOSKELETON&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"A structural network within the cell composed of actin filaments that provides shape and support."&lt;SEP&gt;"The network of actin filaments that provides structural support to the cell."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;SITE_OF_DOUBLE-STRAND_BREAK.&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A site of double-strand break refers to a location within DNA where both strands are broken, requiring repair mechanisms such as homologous recombination or non-homologous end joining."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;SECRETORY GRANULE LUMEN&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"The interior space of secretory granules where molecules are stored before secretion."&lt;SEP&gt;"The interior space of secretory granules, where molecules are stored prior to secretion."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;ACTIN_FILAMENT_BINDING.&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Actin filament binding refers to the ability of proteins to bind and interact with actin filaments in the cytoskeleton."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;ARPC5&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"ARPC5 is a protein involved in cellular processes including actin filament binding, nucleation, and regulation of actin dynamics. It participates in signaling events such as CDC42 signaling, Clathrin-mediated endocytosis, EPHB- and ErbB1 downstream signaling, PDGFR-beta signaling, neutrophil degranulation, and others."&lt;SEP&gt;"ARPC5 is a protein involved in various cellular structures and processes."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e&lt;SEP&gt;chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;REGULATION_OF_ACTIN_DYNAMICS_FOR_PHAGOCYTIC_CUP_FORMATION.&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The regulation of actin dynamics for phagocytic cup formation is a process by which cells engulf particles or pathogens, involving the reorganization of the actin cytoskeleton."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;RAC1_SIGNALING_PATHWAY&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The RAC1 signaling pathway involves the small GTPase RAC1, which plays roles in cytoskeletal organization, cell migration, and other cellular processes."</data>
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</node>
+<node id="&quot;ARP2/3 PROTEIN COMPLEX&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"A protein complex involved in actin polymerization and cytoskeleton organization."&lt;SEP&gt;"The Arp2/3 protein complex is a key player in actin polymerization and cytoskeleton organization."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;SITE OF DOUBLE-STRAND BREAK&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"A location within the cell where both strands of the DNA double helix have been broken, often during DNA repair processes."&lt;SEP&gt;"A location within the cell where breaks in both strands of DNA occur, often during repair processes."</data>
+  <data key="d2">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</node>
+<node id="&quot;PDGFR-BETA_SIGNALING_PATHWAY.&quot;">
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+  <data key="d1">"ARPC5 participates in the PDGFR-beta signaling pathway, indicating its role in cell proliferation and differentiation."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;ARPC4&quot;">
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+  <data key="d1">"ARPC4 is involved in processes related to pathogenic E. coli infection, suggesting its role in host defense or bacterial invasion."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;PATHOGENIC_ESCHERICHIA_COLI_INFECTION.&quot;">
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+  <data key="d1">"ARPC4 is involved in processes related to pathogenic E. coli infection, suggesting its role in host defense or bacterial invasion."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;RAC1_SIGNALING_PATHWAY.&quot;">
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+  <data key="d1">"ARPC4 participates in the RAC1 signaling pathway, indicating its role in cytoskeletal organization and cell migration."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;CDC42_SIGNALING_EVENTS.&quot;">
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+  <data key="d1">"ARPC5 participates in CDC42 signaling events, indicating its role in cytoskeletal organization during these processes."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;CLATHRIN-MEDIATED_ENDOCYTOSIS.&quot;">
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+  <data key="d1">"ARPC4 is involved in Clathrin-mediated endocytosis, suggesting its role in vesicle formation and cargo internalization."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;EPHB-MEDIATED_FORWARD_SIGNALING.&quot;">
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+  <data key="d1">"ARPC4 participates in EPHB-mediated forward signaling, indicating its role in cell-cell communication and cytoskeletal remodeling."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;ERBB1_DOWNSTREAM_SIGNALING.&quot;">
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+  <data key="d1">"ARPC4 is involved in ErbB1 downstream signaling, suggesting its role in growth factor signaling and cellular responses."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;CDC42_SIGNALING_EVENTS&quot;">
+  <data key="d2">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+  <data key="d1">"ARPC5 participates in CDC42 signaling events, indicating its role in regulating actin dynamics during this signaling process."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<edge source="&quot;CYTOSOL&quot;" target="&quot;CYTOPLASM&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The cytoplasm consists of the cytosol and other organelles, serving as the medium for cellular processes."</data>
+  <data key="d5">"intracellular environment, localization"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;CYTOSOL&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC5 exists within the cytosol where it interacts with other proteins to regulate cellular processes."</data>
+  <data key="d5">"intracellular localization, function"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;RHO_GTPASES_ACTIVATE_WASPS_AND_WAVES.&quot;" target="&quot;ARPC4&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"ARPC4 is involved in RHO GTPase activation of WASP/WAVE proteins, suggesting its role in actin cytoskeleton remodeling."</data>
+  <data key="d5">"cytoskeletal remodeling, RHO signaling"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;RHO_GTPASES_ACTIVATE_WASPS_AND_WAVES.&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"ARPC5 is involved in RHO GTPase activation of WASP/WAVE proteins, suggesting its role in actin cytoskeleton remodeling."</data>
+  <data key="d5">"cytoskeletal remodeling, RHO signaling"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ENDOSOME&quot;" target="&quot;EXTRACELLULAR EXOSOME&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Endosomes are involved in the formation and release of extracellular exosomes."</data>
+  <data key="d5">"exosome biogenesis, trafficking"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ENDOSOME&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"ARPC5 is associated with endosomes, potentially influencing their dynamics and cargo sorting."</data>
+  <data key="d5">"membrane trafficking, component"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;EXTRACELLULAR EXOSOME&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"ARPC5 may be involved in the formation or function of extracellular exosomes, contributing to intercellular communication."</data>
+  <data key="d5">"exosome biogenesis, signaling"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;EXTRACELLULAR REGION&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"ARPC5's activities extend into the extracellular region, affecting processes outside the cell membrane."</data>
+  <data key="d5">"extracellular function, influence"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;EXTRACELLULAR REGION&quot;" target="&quot;SECRETORY GRANULE LUMEN&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Secretory granules release their contents into the extracellular region through secretion processes."</data>
+  <data key="d5">"secretion, intercellular communication"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;FICOLIN-1-RICH GRANULE LUMEN&quot;" target="&quot;NUCLEUS&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"Ficolin-1-rich granules may interact with nuclear processes, though their exact role in the nucleus is less defined."</data>
+  <data key="d5">"granule function, nuclear localization"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;FICOLIN-1-RICH GRANULE LUMEN&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"ARPC5 is present within ficolin-1-rich granules, potentially participating in innate immune responses."</data>
+  <data key="d5">"innate immunity, granular function"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;FOCAL ADHESION&quot;" target="&quot;CELL PROJECTION&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Cell projections like filopodia interact with focal adhesions to mediate cell adhesion and migration."</data>
+  <data key="d5">"adhesion, motility coupling"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;FOCAL ADHESION&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"ARPC5 plays a role in the formation or stabilization of focal adhesions, linking the cytoskeleton to the extracellular matrix."</data>
+  <data key="d5">"adhesion, structural support"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;CELL PROJECTION&quot;" target="&quot;ARP2/3 PROTEIN COMPLEX&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The Arp2/3 complex plays a role in the formation and extension of cell projections like lamellipodia and filopodia."</data>
+  <data key="d5">"projection dynamics, structural support"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;CELL PROJECTION&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"ARPC5 is involved in the formation and maintenance of cell projections such as filopodia and lamellipodia."</data>
+  <data key="d5">"cell motility, structural support"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;GROWTH CONE&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC5 contributes to the dynamics and function of growth cones, particularly in neuronal development and guidance."</data>
+  <data key="d5">"neuronal development, motility"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;GROWTH CONE&quot;" target="&quot;NEURON PROJECTION&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The growth cone is a specialized structure at the tip of neuron projections like axons, guiding their extension during development."</data>
+  <data key="d5">"neuronal connectivity, guidance"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;CYTOPLASM&quot;" target="&quot;ACTIN CYTOSKELETON&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The actin cytoskeleton is embedded within the cytoplasm and contributes to its structural organization."</data>
+  <data key="d5">"structural role, localization"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;CYTOPLASM&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC5 operates within the cytoplasm where it interacts with other cellular components to perform its functions."</data>
+  <data key="d5">"intracellular activity, localization"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;LAMELLIPODIUM&quot;" target="&quot;ACTIN CYTOSKELETON&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The actin cytoskeleton is essential for lamellipodium formation and dynamics, enabling cell movement."</data>
+  <data key="d5">"motility, protrusion formation"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;LAMELLIPODIUM&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"ARPC5 is involved in lamellipodium formation and activity, aiding in cell migration and exploration."</data>
+  <data key="d5">"cell motility, protrusion dynamics"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;NEURON PROJECTION&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC5 supports the development and function of neuron projections, such as axons and dendrites."</data>
+  <data key="d5">"neuronal connectivity, structural support"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;CYTOSKELETON&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is integral to the cytoskeleton's function and structure, aiding in processes like cell movement and shape maintenance."</data>
+  <data key="d5">"structural integrity, component"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;NUCLEUS&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"ARPC5's presence or activity in the nucleus may influence nuclear processes, though its role here is less defined compared to other locations."</data>
+  <data key="d5">"nuclear function, localization"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ACTIN CYTOSKELETON&quot;" target="&quot;ARP2/3 PROTEIN COMPLEX&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The Arp2/3 protein complex is critical for actin polymerization and contributes to the structure and dynamics of the actin cytoskeleton."</data>
+  <data key="d5">"cytoskeletal organization, polymerization"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ACTIN CYTOSKELETON&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 contributes to the structure and dynamics of the actin cytoskeleton by participating in its assembly and regulation."</data>
+  <data key="d5">"cytoskeletal function, component"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;SECRETORY GRANULE LUMEN&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"ARPC5 may be involved in the biogenesis or function of secretory granules, affecting secretion processes."</data>
+  <data key="d5">"granule dynamics, secretion"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ACTIN_FILAMENT_BINDING.&quot;" target="&quot;ARPC4&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"ARPC4 enables actin filament binding, suggesting its role in stabilizing or interacting with actin filaments."</data>
+  <data key="d5">"actin binding, cytoskeletal interaction"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ACTIN_FILAMENT_BINDING.&quot;" target="&quot;ARPC5&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"ARPC5 enables actin filament binding, suggesting its role in stabilizing or interacting with actin filaments."</data>
+  <data key="d5">"actin binding, cytoskeletal interaction"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;PDGFR-BETA_SIGNALING_PATHWAY.&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC5 participates in the PDGFR-beta signaling pathway, indicating its role in cell proliferation and differentiation."</data>
+  <data key="d5">"cell signaling, proliferation"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;PATHOGENIC_ESCHERICHIA_COLI_INFECTION.&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"ARPC5 is involved in processes related to pathogenic E. coli infection, suggesting its role in host defense or bacterial invasion."</data>
+  <data key="d5">"pathogen interaction, infection process"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;CDC42_SIGNALING_EVENTS.&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC5 participates in CDC42 signaling events, indicating its role in cytoskeletal organization during these processes."</data>
+  <data key="d5">"signaling pathway, actin regulation"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;RAC1_SIGNALING_PATHWAY.&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC5 participates in the RAC1 signaling pathway, indicating its role in cytoskeletal organization and cell migration."</data>
+  <data key="d5">"signaling pathway, cell movement"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;CLATHRIN-MEDIATED_ENDOCYTOSIS.&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"ARPC5 is involved in Clathrin-mediated endocytosis, suggesting its role in vesicle formation and cargo internalization."</data>
+  <data key="d5">"endocytosis, vesicle dynamics"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;REGULATION_OF_ACTIN_DYNAMICS_FOR_PHAGOCYTIC_CUP_FORMATION.&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC5 contributes to the regulation of actin dynamics during phagocytic cup formation, indicating its role in immune cell function."</data>
+  <data key="d5">"phagocytosis, actin regulation"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;EPHB-MEDIATED_FORWARD_SIGNALING.&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"ARPC5 participates in EPHB-mediated forward signaling, indicating its role in cell-cell communication and cytoskeletal remodeling."</data>
+  <data key="d5">"signaling pathway, cell adhesion"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;SITE OF DOUBLE-STRAND BREAK&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"ARPC5's role at sites of double-strand breaks suggests involvement in DNA repair mechanisms."</data>
+  <data key="d5">"DNA repair, genomic stability"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;ERBB1_DOWNSTREAM_SIGNALING.&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"ARPC5 is involved in ErbB1 downstream signaling, suggesting its role in growth factor signaling and cellular responses."</data>
+  <data key="d5">"growth factor signaling, cytoskeletal remodeling"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;CDC42_SIGNALING_EVENTS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC5 participates in CDC42 signaling events, indicating its role in regulating actin dynamics during this signaling process."</data>
+  <data key="d5">"signaling pathway, actin regulation"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;ARP2/3 PROTEIN COMPLEX&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC5 is a component of the Arp2/3 protein complex, playing a role in actin polymerization and cytoskeleton organization."</data>
+  <data key="d5">"component, structural role"</data>
+  <data key="d6">chunk-4721c0e5a5d6f31a4758abea9e3bb66a</data>
+</edge>
+<edge source="&quot;ARPC5&quot;" target="&quot;ARPC4&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ARPC4 and ARPC5 are both components of the Arp2/3 complex, which is involved in actin nucleation and polymerization. They work together to regulate actin cytoskeleton dynamics and participate in various signaling pathways."</data>
+  <data key="d5">"protein interaction, cellular process, signaling pathway"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;REGULATION_OF_ACTIN_DYNAMICS_FOR_PHAGOCYTIC_CUP_FORMATION.&quot;" target="&quot;ARPC4&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC4 contributes to the regulation of actin dynamics during phagocytic cup formation, indicating its role in immune cell function."</data>
+  <data key="d5">"phagocytosis, actin regulation"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;PDGFR-BETA_SIGNALING_PATHWAY.&quot;" target="&quot;ARPC4&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC4 participates in the PDGFR-beta signaling pathway, indicating its role in cell proliferation and differentiation."</data>
+  <data key="d5">"cell signaling, proliferation"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC4&quot;" target="&quot;PATHOGENIC_ESCHERICHIA_COLI_INFECTION.&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"ARPC4 is involved in processes related to pathogenic E. coli infection, suggesting its role in host defense or bacterial invasion."</data>
+  <data key="d5">"pathogen interaction, infection process"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC4&quot;" target="&quot;RAC1_SIGNALING_PATHWAY.&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC4 participates in the RAC1 signaling pathway, indicating its role in cytoskeletal organization and cell migration."</data>
+  <data key="d5">"signaling pathway, cell movement"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC4&quot;" target="&quot;CLATHRIN-MEDIATED_ENDOCYTOSIS.&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"ARPC4 is involved in Clathrin-mediated endocytosis, suggesting its role in vesicle formation and cargo internalization."</data>
+  <data key="d5">"endocytosis, vesicle dynamics"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC4&quot;" target="&quot;CDC42_SIGNALING_EVENTS.&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC4 participates in CDC42 signaling events, indicating its role in cytoskeletal organization during these processes."</data>
+  <data key="d5">"signaling pathway, actin regulation"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC4&quot;" target="&quot;EPHB-MEDIATED_FORWARD_SIGNALING.&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"ARPC4 participates in EPHB-mediated forward signaling, indicating its role in cell-cell communication and cytoskeletal remodeling."</data>
+  <data key="d5">"signaling pathway, cell adhesion"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC4&quot;" target="&quot;ERBB1_DOWNSTREAM_SIGNALING.&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"ARPC4 is involved in ErbB1 downstream signaling, suggesting its role in growth factor signaling and cellular responses."</data>
+  <data key="d5">"growth factor signaling, cytoskeletal remodeling"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+<edge source="&quot;ARPC4&quot;" target="&quot;CDC42_SIGNALING_EVENTS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"ARPC4 participates in CDC42 signaling events, indicating its role in regulating actin dynamics during this signaling process."</data>
+  <data key="d5">"signaling pathway, actin regulation"</data>
+  <data key="d6">chunk-3688619fce16d8bee5f1c0f6aea46a1e</data>
+</edge>
+</graph></graphml>
