@@ -8,10 +8,12 @@ PROMPTS["DEFAULT_RECORD_DELIMITER"] = "##"
 PROMPTS["DEFAULT_COMPLETION_DELIMITER"] = "<|COMPLETE|>"
 PROMPTS["process_tickers"] = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
 
+# 这个entity type可以改一下
 PROMPTS["DEFAULT_ENTITY_TYPES"] = ["organization", "person", "geo", "event", "category"]
 
+# Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
 PROMPTS["entity_extraction"] = """-Goal-
-Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
+Given a knowleage graph that has direct entites and relationship, where every row is a triple in the form of 'source entity - relationship - target entity', identify all entities of those types from the text and all relationships among the identified entities.
 Use {language} as output language.
 
 -Steps-
@@ -25,7 +27,7 @@ Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<e
 For each pair of related entities, extract the following information:
 - source_entity: name of the source entity, as identified in step 1
 - target_entity: name of the target entity, as identified in step 1
-- relationship_description: explanation as to why you think the source entity and the target entity are related to each other
+- relationship_description: just catch the relationship in each row
 - relationship_strength: a numeric score indicating strength of the relationship between the source entity and target entity
 - relationship_keywords: one or more high-level key words that summarize the overarching nature of the relationship, focusing on concepts or themes rather than specific details
 Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_keywords>{tuple_delimiter}<relationship_strength>)
@@ -50,7 +52,7 @@ Text: {input_text}
 ######################
 Output:
 """
-
+# examples
 PROMPTS["entity_extraction_examples"] = [
     """Example 1:
 
@@ -124,6 +126,7 @@ Output:
 #############################""",
 ]
 
+## 
 PROMPTS[
     "summarize_entity_descriptions"
 ] = """You are a helpful assistant responsible for generating a comprehensive summary of the data provided below.
