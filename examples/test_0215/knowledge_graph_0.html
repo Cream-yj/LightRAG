@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 100vh;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#4fa135", "description": "\"An outward rectifier potassium channel activity specific to A-type channels.\"", "entity_type": "\"CATEGORY\"", "id": "\"A-TYPE (TRANSIENT OUTWARD) POTASSIUM CHANNEL ACTIVITY\"", "label": "\"A-TYPE (TRANSIENT OUTWARD) POTASSIUM CHANNEL ACTIVITY\"", "shape": "dot", "size": 10, "source_id": "chunk-b3ff406d9af13ac4acffa8e19a7c8ebe", "title": "\"An outward rectifier potassium channel activity specific to A-type channels.\""}, {"color": "#51513b", "description": "\"The biosynthesis of 7-methylguanosine.\"", "entity_type": "\"CATEGORY\"", "id": "\"7-METHYLGUANOSINE_BIOSYNTHETIC_PROCESS.", "label": "\"7-METHYLGUANOSINE_BIOSYNTHETIC_PROCESS.", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"The biosynthesis of 7-methylguanosine.\""}, {"color": "#c670ec", "description": "\"A biosynthetic process involving the formation of heterocyclic compounds.\"", "entity_type": "\"CATEGORY\"", "id": "\"HETEROCYCLE_BIOSYNTHETIC_PROCESS\"", "label": "\"HETEROCYCLE_BIOSYNTHETIC_PROCESS\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"A biosynthetic process involving the formation of heterocyclic compounds.\""}, {"color": "#0ededb", "description": "\"A type of adenosine receptor binding activity specific to the A1 subtype.\"", "entity_type": "\"CATEGORY\"", "id": "\"A1 ADENOSINE RECEPTOR BINDING\"", "label": "\"A1 ADENOSINE RECEPTOR BINDING\"", "shape": "dot", "size": 10, "source_id": "chunk-b3ff406d9af13ac4acffa8e19a7c8ebe", "title": "\"A type of adenosine receptor binding activity specific to the A1 subtype.\""}, {"color": "#584383", "description": "\"A biosynthetic process involving guanosine-containing compounds.\"", "entity_type": "\"CATEGORY\"", "id": "\"GUANOSINE-CONTAINING_COMPOUND_BIOSYNTHETIC_PROCESS.\"", "label": "\"GUANOSINE-CONTAINING_COMPOUND_BIOSYNTHETIC_PROCESS.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"A biosynthetic process involving guanosine-containing compounds.\""}, {"color": "#b5023c", "description": "\"An oxidoreductase activity involving the CH-CH group of donors.\"", "entity_type": "\"CATEGORY\"", "id": "\"OXIDOREDUCTASE_ACTIVITY_ACTS_ON_CH-CH_GROUP.\"", "label": "\"OXIDOREDUCTASE_ACTIVITY_ACTS_ON_CH-CH_GROUP.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An oxidoreductase activity involving the CH-CH group of donors.\""}, {"color": "#4fdfdc", "description": "\"A protein involved in molecular functions, particularly in processes such as neutrophil degranulation and platelet degranulation.\"", "entity_type": "\"CATEGORY\"", "id": "\"A1BG\"", "label": "\"A1BG\"", "shape": "dot", "size": 10, "source_id": "chunk-b3ff406d9af13ac4acffa8e19a7c8ebe", "title": "\"A protein involved in molecular functions, particularly in processes such as neutrophil degranulation and platelet degranulation.\""}, {"color": "#e2c1f1", "description": "\"An enzymatic activity that hydroxylates 7-beta-hydroxytaxusin.\"", "entity_type": "\"CATEGORY\"", "id": "\"7-BETA-HYDROXYTAXUSIN_2-ALPHA-HYDROXYLASE_ACTIVITY.\"", "label": "\"7-BETA-HYDROXYTAXUSIN_2-ALPHA-HYDROXYLASE_ACTIVITY.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An enzymatic activity that hydroxylates 7-beta-hydroxytaxusin.\""}, {"color": "#953b83", "description": "\"The biosynthesis of pteridine-containing compounds.\"", "entity_type": "\"CATEGORY\"", "id": "\"PTERIDINE-CONTAINING_COMPOUND_BIOSYNTHETIC_PROCESS.\"", "label": "\"PTERIDINE-CONTAINING_COMPOUND_BIOSYNTHETIC_PROCESS.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"The biosynthesis of pteridine-containing compounds.\""}, {"color": "#800dab", "description": "\"The annotated version of 7,8-didemethyl-8-hydroxy-5-deazariboflavin.\"", "entity_type": "\"CATEGORY\"", "id": "\"7,8-DIDEMETHYL-8-HYDROXY-5-DEAZARIBOFLAVIN_ANNOTATED.\"", "label": "\"7,8-DIDEMETHYL-8-HYDROXY-5-DEAZARIBOFLAVIN_ANNOTATED.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"The annotated version of 7,8-didemethyl-8-hydroxy-5-deazariboflavin.\""}, {"color": "#792623", "description": "\"The processing of mRNA, including capping and modification.\"", "entity_type": "\"CATEGORY\"", "id": "\"MRNA_PROCESSING.\"", "label": "\"MRNA_PROCESSING.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"The processing of mRNA, including capping and modification.\""}, {"color": "#2fb3be", "description": "\"A cellular anatomical entity that is part of the sarcomere.\"", "entity_type": "\"CATEGORY\"", "id": "\"A BAND\"", "label": "\"A BAND\"", "shape": "dot", "size": 10, "source_id": "chunk-b3ff406d9af13ac4acffa8e19a7c8ebe", "title": "\"A cellular anatomical entity that is part of the sarcomere.\""}, {"color": "#3c26ff", "description": "\"A complex of enzymes involved in transferase activities.\"", "entity_type": "\"CATEGORY\"", "id": "\"TRANSFERASE_COMPLEX\"", "label": "\"TRANSFERASE_COMPLEX\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"A complex of enzymes involved in transferase activities.\""}, {"color": "#10263c", "description": "\"Metabolic processes involving guanosine-containing compounds.\"", "entity_type": "\"CATEGORY\"", "id": "\"GUANOSINE-CONTAINING_COMPOUND_METABOLIC_PROCESS.", "label": "\"GUANOSINE-CONTAINING_COMPOUND_METABOLIC_PROCESS.", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"Metabolic processes involving guanosine-containing compounds.\""}, {"color": "#03b05a", "description": "\"An enzymatic activity that oxidizes benzo(a)pyrene derivatives.\"", "entity_type": "\"CATEGORY\"", "id": "\"7,8-DIHYDROXY-BENZO(A)PYRENE_DIOXYGENASE_ACTIVITY.\"", "label": "\"7,8-DIHYDROXY-BENZO(A)PYRENE_DIOXYGENASE_ACTIVITY.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An enzymatic activity that oxidizes benzo(a)pyrene derivatives.\""}, {"color": "#519ff2", "description": "\"An oxidoreductase activity involving paired donors and the incorporation or reduction of molecular oxygen.\"", "entity_type": "\"CATEGORY\"", "id": "\"OXIDOREDUCTASE_ACTIVITY_ACTS_ON_PAIRED_DONORS_WITH_INC_OR_REDUCTION_OF_MOLECULAR_OXYGEN.\"", "label": "\"OXIDOREDUCTASE_ACTIVITY_ACTS_ON_PAIRED_DONORS_WITH_INC_OR_REDUCTION_OF_MOLECULAR_OXYGEN.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An oxidoreductase activity involving paired donors and the incorporation or reduction of molecular oxygen.\""}, {"color": "#4c7b94", "description": "\"An enzymatic activity that methylates 7-methylmyricetin at the 4\u0027 position.\"", "entity_type": "\"CATEGORY\"", "id": "\"7-METHYLMYRICETIN_4\u0027-O-METHYLTRANSFERASE_ACTIVITY.\"", "label": "\"7-METHYLMYRICETIN_4\u0027-O-METHYLTRANSFERASE_ACTIVITY.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An enzymatic activity that methylates 7-methylmyricetin at the 4\u0027 position.\""}, {"color": "#578860", "description": "\"A methyltransferase with an annotated version.\"", "entity_type": "\"CATEGORY\"", "id": "\"METHYLTRANSFERASE_ANNOTATED.\"", "label": "\"METHYLTRANSFERASE_ANNOTATED.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"A methyltransferase with an annotated version.\""}, {"color": "#923b3c", "description": "\"A process involving the synthesis of organonitrogen compounds.\"", "entity_type": "\"CATEGORY\"", "id": "\"ORGANONITROGEN_COMPOUND_BIOSYNTHETIC_PROCESS\"", "label": "\"ORGANONITROGEN_COMPOUND_BIOSYNTHETIC_PROCESS\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"A process involving the synthesis of organonitrogen compounds.\""}, {"color": "#50dad4", "description": "\"An enzymatic activity that hydrolyzes phosphoric diesters.\"", "entity_type": "\"CATEGORY\"", "id": "\"PHOSPHORIC_DIESTER_HYDROLASE_ACTIVITY\"", "label": "\"PHOSPHORIC_DIESTER_HYDROLASE_ACTIVITY\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An enzymatic activity that hydrolyzes phosphoric diesters.\""}, {"color": "#41c539", "description": "\"An enzymatic activity that synthesizes 7-oxateasterone.\"", "entity_type": "\"CATEGORY\"", "id": "\"7-OXATEASTERONE_SYNTHASE_ACTIVITY.\"", "label": "\"7-OXATEASTERONE_SYNTHASE_ACTIVITY.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An enzymatic activity that synthesizes 7-oxateasterone.\""}, {"color": "#f4779a", "description": "\"The biosynthesis of compounds containing methanopterins.\"", "entity_type": "\"CATEGORY\"", "id": "\"METHANOPTERIN-CONTAINING_COMPOUND_BIOSYNTHETIC_PROCESS\"", "label": "\"METHANOPTERIN-CONTAINING_COMPOUND_BIOSYNTHETIC_PROCESS\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"The biosynthesis of compounds containing methanopterins.\""}, {"color": "#066dcf", "description": "\"The biosynthesis of 7-cyano-7-deazaguanine.\"", "entity_type": "\"CATEGORY\"", "id": "\"7-CYANO-7-DEAZAGUANINE_BIOSYNTHETIC_PROCESS.", "label": "\"7-CYANO-7-DEAZAGUANINE_BIOSYNTHETIC_PROCESS.", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"The biosynthesis of 7-cyano-7-deazaguanine.\""}, {"color": "#012edb", "description": "\"An oxidoreductase activity involved in the incorporation or reduction of molecular oxygen, with NAD(P)H as one donor and the incorporation of one atom of oxygen.\"", "entity_type": "\"CATEGORY\"", "id": "\"9,12- CIS-HEXADECADIENOIC ACID DELTA 15 DESATURASE ACTIVITY\"", "label": "\"9,12- CIS-HEXADECADIENOIC ACID DELTA 15 DESATURASE ACTIVITY\"", "shape": "dot", "size": 10, "source_id": "chunk-b3ff406d9af13ac4acffa8e19a7c8ebe", "title": "\"An oxidoreductase activity involved in the incorporation or reduction of molecular oxygen, with NAD(P)H as one donor and the incorporation of one atom of oxygen.\""}, {"color": "#3fe71c", "description": "\"The metabolic processes involving 7,8-didemethyl-8-hydroxy-5-deazariboflavin.\"", "entity_type": "\"CATEGORY\"", "id": "\"7,8-DIDEMETHYL-8-HYDROXY-5-DEAZARIBOFLAVIN_METABOLIC_PROCESS\"", "label": "\"7,8-DIDEMETHYL-8-HYDROXY-5-DEAZARIBOFLAVIN_METABOLIC_PROCESS\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"The metabolic processes involving 7,8-didemethyl-8-hydroxy-5-deazariboflavin.\""}, {"color": "#f23173", "description": "\"An enzymatic activity that cleaves phosphodiesters in 7,8-dihydro-D-neopterin cyclic phosphate.\"", "entity_type": "\"CATEGORY\"", "id": "\"7,8-DIHYDRO-D-NEOPTERIN_2\u0027,3\u0027-CYCLIC_PHOSPHATE_PHOSPHODIESTERASE_ACTIVITY.\"", "label": "\"7,8-DIHYDRO-D-NEOPTERIN_2\u0027,3\u0027-CYCLIC_PHOSPHATE_PHOSPHODIESTERASE_ACTIVITY.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An enzymatic activity that cleaves phosphodiesters in 7,8-dihydro-D-neopterin cyclic phosphate.\""}, {"color": "#9d0296", "description": "\"A glucuronosyltransferase activity specific to 9-phenanthrol.\"", "entity_type": "\"CATEGORY\"", "id": "\"9-PHENANTHROL UDP-GLUCURONOSYLTRANSFERASE ACTIVITY\"", "label": "\"9-PHENANTHROL UDP-GLUCURONOSYLTRANSFERASE ACTIVITY\"", "shape": "dot", "size": 10, "source_id": "chunk-b3ff406d9af13ac4acffa8e19a7c8ebe", "title": "\"A glucuronosyltransferase activity specific to 9-phenanthrol.\""}, {"color": "#31b57a", "description": "\"Metabolic processes related to heterocyclic and organic cyclic compounds.\"", "entity_type": "\"CATEGORY\"", "id": "\"HETEROCYCLE_ORGANIC_CYCLIC_COMPOUND_METABOLIC_PROCESS\"", "label": "\"HETEROCYCLE_ORGANIC_CYCLIC_COMPOUND_METABOLIC_PROCESS\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"Metabolic processes related to heterocyclic and organic cyclic compounds.\""}, {"color": "#f26490", "description": "\"An enzymatic activity that catalyzes the cleavage of aldehydes.\"", "entity_type": "\"CATEGORY\"", "id": "\"ALDEHYDE-LYASE_ACTIVITY.\"", "label": "\"ALDEHYDE-LYASE_ACTIVITY.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An enzymatic activity that catalyzes the cleavage of aldehydes.\""}, {"color": "#58b28a", "description": "\"A type of enzymatic activity that transfers methyl groups.\"", "entity_type": "\"CATEGORY\"", "id": "\"METHYLTRANSFERASE_ACTIVITY\"", "label": "\"METHYLTRANSFERASE_ACTIVITY\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"A type of enzymatic activity that transfers methyl groups.\""}, {"color": "#4fddc0", "description": "\"An oxidoreductase activity involving the incorporation of molecular oxygen into single donors.\"", "entity_type": "\"CATEGORY\"", "id": "\"OXIDOREDUCTASE_ACTIVITY_ACTS_ON_SINGLE_DONORS_WITH_INC_OF_MOLECULAR_OXYGEN.\"", "label": "\"OXIDOREDUCTASE_ACTIVITY_ACTS_ON_SINGLE_DONORS_WITH_INC_OF_MOLECULAR_OXYGEN.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An oxidoreductase activity involving the incorporation of molecular oxygen into single donors.\""}, {"color": "#655ae6", "description": "\"A biosynthetic process involving heterocyclic and organic cyclic compounds.\"", "entity_type": "\"CATEGORY\"", "id": "\"HETEROCYCLE_ORGANIC_CYCLIC_COMPOUND_BIOSYNTHETIC_PROCESS.\"", "label": "\"HETEROCYCLE_ORGANIC_CYCLIC_COMPOUND_BIOSYNTHETIC_PROCESS.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"A biosynthetic process involving heterocyclic and organic cyclic compounds.\""}, {"color": "#569547", "description": "\"The metabolic processes involving dihydrobiopterins.\"", "entity_type": "\"CATEGORY\"", "id": "\"DIHYDROBIOPTERIN_METABOLIC_PROCESS\"", "label": "\"DIHYDROBIOPTERIN_METABOLIC_PROCESS\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"The metabolic processes involving dihydrobiopterins.\""}, {"color": "#039d09", "description": "\"Metabolic processes involving organonitrogen compounds.\"", "entity_type": "\"CATEGORY\"", "id": "\"ORGANONITROGEN_COMPOUND_METABOLIC_PROCESS\"", "label": "\"ORGANONITROGEN_COMPOUND_METABOLIC_PROCESS\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"Metabolic processes involving organonitrogen compounds.\""}, {"color": "#24b997", "description": "\"The process of synthesizing 7,8-didemethyl-8-hydroxy-5-deazariboflavin.\"", "entity_type": "\"CATEGORY\"", "id": "\"7,8-DIDEMETHYL-8-HYDROXY-5-DEAZARIBOFLAVIN_BIOSYNTHETIC_PROCESS\"", "label": "\"7,8-DIDEMETHYL-8-HYDROXY-5-DEAZARIBOFLAVIN_BIOSYNTHETIC_PROCESS\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"The process of synthesizing 7,8-didemethyl-8-hydroxy-5-deazariboflavin.\""}, {"color": "#67ab7d", "description": "\"An enzymatic activity that oxidizes 7,8-dihydroxykynurenate.\"", "entity_type": "\"CATEGORY\"", "id": "\"7,8-DIHYDROXYKYNURENATE_8,8A-DIOXYGENASE_ACTIVITY.\"", "label": "\"7,8-DIHYDROXYKYNURENATE_8,8A-DIOXYGENASE_ACTIVITY.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An enzymatic activity that oxidizes 7,8-dihydroxykynurenate.\""}, {"color": "#6b1f6a", "description": "\"An enzymatic activity that reduces 7,8-dihydrocholesterol.\"", "entity_type": "\"CATEGORY\"", "id": "\"7,8-DIHYDROCHOLESTEROL_REDUCTASE_ACTIVITY.", "label": "\"7,8-DIHYDROCHOLESTEROL_REDUCTASE_ACTIVITY.", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An enzymatic activity that reduces 7,8-dihydrocholesterol.\""}, {"color": "#b0b868", "description": "\"A biosynthetic process involving organophosphates.\"", "entity_type": "\"CATEGORY\"", "id": "\"ORGANOPHOSPHATE_BIOSYNTHETIC_PROCESS\"", "label": "\"ORGANOPHOSPHATE_BIOSYNTHETIC_PROCESS\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"A biosynthetic process involving organophosphates.\""}, {"color": "#b9f2d4", "description": "\"An enzymatic activity related to the methylation of 7,8,4\u0027-trihydroxyflavone.\"", "entity_type": "\"CATEGORY\"", "id": "\"7,8,4\u0027-TRIHYDROXYFLAVONE_METHYLTRANSFERASE_ACTIVITY\"", "label": "\"7,8,4\u0027-TRIHYDROXYFLAVONE_METHYLTRANSFERASE_ACTIVITY\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An enzymatic activity related to the methylation of 7,8,4\u0027-trihydroxyflavone.\""}, {"color": "#d940d7", "description": "\"A phenanthrol glycosyltransferase activity specific to 9-phenanthrol.\"", "entity_type": "\"CATEGORY\"", "id": "\"9-PHENANTHROL GLYCOSYLTRANSFERASE ACTIVITY\"", "label": "\"9-PHENANTHROL GLYCOSYLTRANSFERASE ACTIVITY\"", "shape": "dot", "size": 10, "source_id": "chunk-b3ff406d9af13ac4acffa8e19a7c8ebe", "title": "\"A phenanthrol glycosyltransferase activity specific to 9-phenanthrol.\""}, {"color": "#69da45", "description": "\"Metabolic processes involving phosphate-containing compounds.\"", "entity_type": "\"CATEGORY\"", "id": "\"PHOSPHATE-CONTAINING_COMPOUND_METABOLIC_PROCESS.\"", "label": "\"PHOSPHATE-CONTAINING_COMPOUND_METABOLIC_PROCESS.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"Metabolic processes involving phosphate-containing compounds.\""}, {"color": "#2b8bd6", "description": "\"A type of enzymatic activity that transfers hexose groups.\"", "entity_type": "\"CATEGORY\"", "id": "\"HEXOSYLTRANSFERASE_ACTIVITY\"", "label": "\"HEXOSYLTRANSFERASE_ACTIVITY\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"A type of enzymatic activity that transfers hexose groups.\""}, {"color": "#5cad8f", "description": "\"A phenanthrol sulfotransferase activity specific to 9-phenanthrol.\"", "entity_type": "\"CATEGORY\"", "id": "\"9-PHENANTHROL SULFOTRANSFERASE ACTIVITY\"", "label": "\"9-PHENANTHROL SULFOTRANSFERASE ACTIVITY\"", "shape": "dot", "size": 10, "source_id": "chunk-b3ff406d9af13ac4acffa8e19a7c8ebe", "title": "\"A phenanthrol sulfotransferase activity specific to 9-phenanthrol.\""}, {"color": "#d52579", "description": "\"The biosynthesis of organic cyclic compounds.\"", "entity_type": "\"CATEGORY\"", "id": "\"ORGANIC_CYCLIC_COMPOUND_BIOSYNTHETIC_PROCESS\"", "label": "\"ORGANIC_CYCLIC_COMPOUND_BIOSYNTHETIC_PROCESS\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"The biosynthesis of organic cyclic compounds.\""}, {"color": "#746e17", "description": "\"A cellular component involved in ribosomal assembly, specifically a type of preribosome.\"", "entity_type": "\"CATEGORY\"", "id": "\"90S PRERIBOSOME\"", "label": "\"90S PRERIBOSOME\"", "shape": "dot", "size": 10, "source_id": "chunk-b3ff406d9af13ac4acffa8e19a7c8ebe", "title": "\"A cellular component involved in ribosomal assembly, specifically a type of preribosome.\""}, {"color": "#ba4bac", "description": "\"An enzymatic activity related to glucosylation of dibenzoylmethane tautomers.\"", "entity_type": "\"CATEGORY\"", "id": "\"6C-NARINGENIN_DIBENZOYLMETHANE_TAUTOMER_GLUCOSYLTRANSFERASE_ACTIVITY\"", "label": "\"6C-NARINGENIN_DIBENZOYLMETHANE_TAUTOMER_GLUCOSYLTRANSFERASE_ACTIVITY\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"An enzymatic activity related to glucosylation of dibenzoylmethane tautomers.\""}, {"color": "#66e1c3", "description": "\"A hexosyltransferase with an annotated version.\"", "entity_type": "\"CATEGORY\"", "id": "\"HEXOSYLTRANSFERASE_ANNOTATED.\"", "label": "\"HEXOSYLTRANSFERASE_ANNOTATED.\"", "shape": "dot", "size": 10, "source_id": "chunk-f0685c42d8398386c8368e3a46faca6f", "title": "\"A hexosyltransferase with an annotated version.\""}]);
+                  edges = new vis.DataSet([]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
